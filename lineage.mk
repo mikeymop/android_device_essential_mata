@@ -37,7 +37,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_STATIC_BOOT_CONTROL_HAL := \
     bootctrl.msm8998 \
     libgptutils \
-    libsparse_static
+    libsparse
 
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += device/essential/mata/overlay
