@@ -1,0 +1,42 @@
+on fs
+    wait /dev/block/platform/soc/1da4000.ufshc
+    symlink /dev/block/platform/soc/1da4000.ufshc /dev/block/bootdevice
+
+    chmod 0660 /dev/qseecom
+    chown system drmrpc /dev/qseecom
+    chmod 0664 /dev/ion
+    chown system system /dev/ion
+#    install_keyring
+
+    # Touch
+    mount vfat /dev/block/bootdevice/by-name/modem_a /firmware ro
+    mount ext4 /dev/block/bootdevice/by-name/dsp_a /dsp ro
+    chmod 0666 /sys/kernel/boot_adsp/boot
+    chmod 0666 /sys/kernel/boot_slpi/boot
+    write /sys/kernel/boot_adsp/boot 1
+    write /sys/kernel/boot_slpi/boot 1
+    start sbinadsprpcd
+    start hbtp
+    start adbd
+
+on boot
+    start sbinqseecomd
+
+service sbinqseecomd /sbin/qseecomd
+    oneshot
+    disabled
+    user root
+    group root
+    seclabel u:r:recovery:s0
+
+service sbinadsprpcd /sbin/adsprpcd
+    user root
+    group root
+    disabled
+    seclabel u:r:recovery:s0
+
+service hbtp /sbin/hbtp_daemon
+    user root
+    group root
+    disabled
+    seclabel u:r:recovery:s0
