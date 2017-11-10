@@ -15,6 +15,3 @@ TW_THEME := portrait_hdpi
 TW_X_OFFSET := 64
 TWRP_INCLUDE_LOGCAT := true
 TWRP_THEME_LOC := device/essential/mata/twrp/theme
-TARGET_USE_CUSTOM_LUN_FILE_PATH := "/sys/devices/soc/a800000.ssusb/a800000.dwc3/gadget/lun%d/file"
-#TW_BRIGHTNESS_PATH := "/sys/devices/soc/900000.qcom\x2cmdss_mdp/900000.qcom\x2cmdss_mdp:qcom\x2cmdss_fb_primary/leds/lcd-backlight/brightness"
-#TARGET_KEYMASTER_WAIT_FOR_QSEE := true
