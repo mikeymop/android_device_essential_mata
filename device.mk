@@ -74,12 +74,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     device/essential/mata/keylayout/uinput-fpc.kl:system/usr/keylayout/uinput-fpc.kl
 
-# GPS
-PRODUCT_PACKAGES += \
-    gps.msm8998 \
-    libgnsspps \
-    libvehiclenetwork-native
-
 # IPv6 tethering
 PRODUCT_PACKAGES += \
     ebtables \
@@ -194,8 +188,6 @@ $(call inherit-product, build/target/product/verity.mk)
 
 # Wifi
 PRODUCT_PACKAGES += \
-    ipacm \
-    IPACM_cfg.xml \
     libqsap_sdk \
     libQWiFiSoftApCfg \
     libwpa_client \

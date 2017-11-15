@@ -1,13 +1,5 @@
 [
   {
-    "repository": "android_device_essential_mata_data-ipa-cfg-mgr",
-    "target_path": "device/essential/mata/data-ipa-cfg-mgr"
-  },
-  {
-    "repository": "android_device_essential_mata_gps",
-    "target_path": "device/essential/mata/gps"
-  },
-  {
     "repository": "android_kernel_essential_msm8998",
     "target_path": "kernel/essential/msm8998"
   },
