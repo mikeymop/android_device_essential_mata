@@ -36,7 +36,7 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_STATIC_BOOT_CONTROL_HAL := \
     bootctrl.msm8998 \
-    librecovery_updater_msm8998 \
+    libgptutils \
     libsparse_static
 
 # Overlays
@@ -45,8 +45,6 @@ DEVICE_PACKAGE_OVERLAYS += device/essential/mata/overlay
 # TWRP
 ifeq ($(WITH_TWRP),true)
 $(call inherit-product, device/essential/mata/twrp/twrp.mk)
-else
-TARGET_RECOVERY_FSTAB := device/essential/mata/rootdir/root/fstab.mata
 endif
 
 # Device identifiers

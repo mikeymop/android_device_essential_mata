@@ -21,23 +21,6 @@ PRODUCT_PACKAGES += \
     tinymix
 
 PRODUCT_COPY_FILES += \
-    device/essential/mata/audio/a2dp_audio_policy_configuration.xml:system/etc/a2dp_audio_policy_configuration.xml \
-    device/essential/mata/audio/aanc_tuning_mixer.txt:system/etc/aanc_tuning_mixer.txt \
-    device/essential/mata/audio/audio_platform_info.xml:system/etc/audio_platform_info.xml \
-    device/essential/mata/audio/audio_policy_configuration.xml:system/etc/audio_policy_configuration.xml \
-    device/essential/mata/audio/listen_platform_info.xml:system/etc/listen_platform_info.xml \
-    device/essential/mata/audio/mixer_paths_i2s.xml:system/etc/mixer_paths_i2s.xml \
-    device/essential/mata/audio/mixer_paths_qvr.xml:system/etc/mixer_paths_qvr.xml \
-    device/essential/mata/audio/mixer_paths_tasha.xml:system/etc/mixer_paths_tasha.xml \
-    device/essential/mata/audio/mixer_paths_tavil.xml:system/etc/mixer_paths_tavil.xml \
-    device/essential/mata/audio/r_submix_audio_policy_configuration.xml:system/etc/r_submix_audio_policy_configuration.xml \
-    device/essential/mata/audio/sound_trigger_mixer_paths.xml:system/etc/sound_trigger_mixer_paths.xml \
-    device/essential/mata/audio/sound_trigger_mixer_paths_wcd9330.xml:system/etc/sound_trigger_mixer_paths_wcd9330.xml \
-    device/essential/mata/audio/sound_trigger_mixer_paths_wcd9340.xml:system/etc/sound_trigger_mixer_paths_wcd9340.xml \
-    device/essential/mata/audio/sound_trigger_platform_info.xml:system/etc/sound_trigger_platform_info.xml \
-    device/essential/mata/audio/usb_audio_policy_configuration.xml:system/etc/usb_audio_policy_configuration.xml
-
-PRODUCT_COPY_FILES += \
     frameworks/av/services/audiopolicy/config/a2dp_audio_policy_configuration.xml:/system/etc/a2dp_audio_policy_configuration.xml \
     frameworks/av/services/audiopolicy/config/audio_policy_volumes.xml:/system/etc/audio_policy_volumes.xml \
     frameworks/av/services/audiopolicy/config/default_volume_tables.xml:/system/etc/default_volume_tables.xml \
@@ -49,12 +32,6 @@ TARGET_SCREEN_HEIGHT := 2560
 TARGET_SCREEN_WIDTH := 1312
 
 # Camera
-PRODUCT_COPY_FILES += \
-    device/essential/mata/configs/camera/camera_config.xml:system/etc/camera/camera_config.xml \
-    device/essential/mata/configs/camera/imx258_chromatix.xml:system/etc/camera/imx258_chromatix.xml \
-    device/essential/mata/configs/camera/imx268_chromatix.xml:system/etc/camera/imx268_chromatix.xml \
-    device/essential/mata/configs/camera/imx258_mono_chromatix.xml:system/etc/camera/imx258_mono_chromatix.xml
-
 PRODUCT_PACKAGES += \
     libxml2 \
     Snap
@@ -103,47 +80,10 @@ PRODUCT_PACKAGES += \
     libgnsspps \
     libvehiclenetwork-native
 
-PRODUCT_COPY_FILES += \
-    device/essential/mata/configs/gps/flp.conf:system/vendor/etc/flp.conf \
-    device/essential/mata/configs/gps/izat.conf:system/vendor/etc/izat.conf \
-    device/essential/mata/configs/gps/lowi.conf:system/vendor/etc/lowi.conf \
-    device/essential/mata/configs/gps/sap.conf:system/vendor/etc/sap.conf \
-    device/essential/mata/configs/gps/xtwifi.conf:system/vendor/etc/xtwifi.conf
-
-# Init
-PRODUCT_COPY_FILES += \
-    device/essential/mata/rootdir/bin/init.qti.qseecomd.sh:system/bin/init.qti.qseecomd.sh \
-    device/essential/mata/rootdir/etc/init.qcom.post_boot.sh:system/etc/init.qcom.post_boot.sh \
-    device/essential/mata/rootdir/root/fstab.mata:root/fstab.mata \
-    device/essential/mata/rootdir/root/init.class_main.sh:root/init.class_main.sh \
-    device/essential/mata/rootdir/root/init.mata.alt.rc:root/init.mata.alt.rc \
-    device/essential/mata/rootdir/root/init.mata.diag.rc:root/init.mata.diag.rc \
-    device/essential/mata/rootdir/root/init.mata.fingerprint.rc:root/init.mata.fingerprint.rc \
-    device/essential/mata/rootdir/root/init.mata.lcm.rc:root/init.mata.lcm.rc \
-    device/essential/mata/rootdir/root/init.mata.power_off_charging.rc:root/init.mata.power_off_charging.rc \
-    device/essential/mata/rootdir/root/init.mata.ramdump.rc:root/init.mata.ramdump.rc \
-    device/essential/mata/rootdir/root/init.mata.rc:root/init.mata.rc \
-    device/essential/mata/rootdir/root/init.mata.sensor.rc:root/init.mata.sensor.rc \
-    device/essential/mata/rootdir/root/init.mata.sensors.sh:root/init.mata.sensors.sh \
-    device/essential/mata/rootdir/root/init.mata.target.rc:root/init.mata.target.rc \
-    device/essential/mata/rootdir/root/init.mata.ufs.rc:root/init.mata.ufs.rc \
-    device/essential/mata/rootdir/root/init.mata.usb.rc:root/init.mata.usb.rc \
-    device/essential/mata/rootdir/root/init.qcom.early_boot.sh:root/init.qcom.early_boot.sh \
-    device/essential/mata/rootdir/root/init.qcom.sh:root/init.qcom.sh \
-    device/essential/mata/rootdir/root/ueventd.mata.rc:root/ueventd.mata.rc
-
 # IPv6 tethering
 PRODUCT_PACKAGES += \
     ebtables \
     ethertypes
-
-# IRQ
-PRODUCT_COPY_FILES += \
-    device/essential/mata/configs/msm_irqbalance.conf:system/vendor/etc/msm_irqbalance.conf
-
-# IRSC
-PRODUCT_COPY_FILES += \
-    device/essential/mata/configs/sec_config:system/etc/sec_config
 
 # Led packages
 PRODUCT_PACKAGES += \
@@ -151,9 +91,6 @@ PRODUCT_PACKAGES += \
 
 # Media
 PRODUCT_COPY_FILES += \
-    device/essential/mata/media/media_profiles.xml:system/etc/media_profiles.xml \
-    device/essential/mata/media/media_codecs.xml:system/etc/media_codecs.xml \
-    device/essential/mata/media/media_codecs_performance.xml:system/etc/media_codecs_performance.xml \
     frameworks/av/media/libstagefright/data/media_codecs_google_audio.xml:system/etc/media_codecs_google_audio.xml \
     frameworks/av/media/libstagefright/data/media_codecs_google_telephony.xml:system/etc/media_codecs_google_telephony.xml \
     frameworks/av/media/libstagefright/data/media_codecs_google_video.xml:system/etc/media_codecs_google_video.xml
@@ -167,10 +104,6 @@ PRODUCT_PACKAGES += \
     nqnfcee_access.xml \
     nqnfcse_access.xml \
     Tag
-
-PRODUCT_COPY_FILES += \
-    device/essential/mata/configs/libnfc-brcm.conf:system/etc/libnfc-brcm.conf \
-    device/essential/mata/configs/libnfc-nxp.conf:system/etc/libnfc-nxp.conf
 
 # Permissions
 PRODUCT_COPY_FILES += \
@@ -241,10 +174,6 @@ PRODUCT_PACKAGES += \
     libprotobuf-cpp-full
 
 # Sensors
-PRODUCT_COPY_FILES += \
-    device/essential/mata/configs/sensor_def_qcomdev.conf:system/etc/sensors/sensor_def_qcomdev.conf \
-    device/essential/mata/configs/hals.conf:system/etc/sensors/hals.conf
-
 PRODUCT_PACKAGES += \
     sensors.msm8998
 
@@ -264,15 +193,6 @@ PRODUCT_SYSTEM_VERITY_PARTITION := /dev/block/bootdevice/by-name/system
 $(call inherit-product, build/target/product/verity.mk)
 
 # Wifi
-PRODUCT_COPY_FILES += \
-    device/essential/mata/wifi/hostapd_default.conf:system/etc/hostapd/hostapd_default.conf \
-    device/essential/mata/wifi/hostapd.accept:system/etc/hostapd/hostapd.accept \
-    device/essential/mata/wifi/hostapd.deny:system/etc/hostapd/hostapd.deny \
-    device/essential/mata/wifi/wifi_concurrency_cfg.txt:system/etc/wifi/wifi_concurrency_cfg.txt \
-    device/essential/mata/wifi/p2p_supplicant_overlay.conf:system/etc/wifi/p2p_supplicant_overlay.conf \
-    device/essential/mata/wifi/wpa_supplicant_overlay.conf:system/etc/wifi/wpa_supplicant_overlay.conf \
-    device/essential/mata/wifi/WCNSS_qcom_cfg.ini:system/etc/wifi/WCNSS_qcom_cfg.ini
-
 PRODUCT_PACKAGES += \
     ipacm \
     IPACM_cfg.xml \
