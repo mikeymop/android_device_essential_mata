@@ -45,6 +45,8 @@ DEVICE_PACKAGE_OVERLAYS += device/essential/mata/overlay
 # TWRP
 ifeq ($(WITH_TWRP),true)
 $(call inherit-product, device/essential/mata/twrp/twrp.mk)
+else
+TARGET_RECOVERY_FSTAB := device/essential/mata/recovery/recovery.fstab
 endif
 
 # Device identifiers
