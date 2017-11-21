@@ -134,11 +134,6 @@ PRODUCT_COPY_FILES += \
     device/essential/mata/rootdir/root/init.qcom.sh:root/init.qcom.sh \
     device/essential/mata/rootdir/root/ueventd.mata.rc:root/ueventd.mata.rc
 
-# IPv6 tethering
-PRODUCT_PACKAGES += \
-    ebtables \
-    ethertypes
-
 # IRQ
 PRODUCT_COPY_FILES += \
     device/essential/mata/configs/msm_irqbalance.conf:system/vendor/etc/msm_irqbalance.conf
