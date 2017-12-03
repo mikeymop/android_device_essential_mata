@@ -1,4 +1,7 @@
-GAPPS_VARIANT := nano
+GAPPS_VARIANT := stock
+GAPPS_EXCLUDED_PACKAGES := EditorsDocs EditorsSheets EditorsSlides GoogleCamera PrebuiltNewsWeather
+GAPPS_FORCE_PACKAGE_OVERRIDES := true
+GAPPS_FORCE_PIXEL_LAUNCHER := true
 $(call inherit-product-if-exists, vendor/opengapps/build/opengapps-packages.mk)
 
 # AAPT
