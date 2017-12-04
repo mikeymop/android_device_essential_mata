@@ -37,6 +37,7 @@ persist.radio.VT_HYBRID_ENABLE=1
 persist.radio.data_con_rprt=true
 persist.radio.rat_on=combine
 persist.rmnet.data.enable=true
+ril.subscription.types=NV,RUIM
 ro.telephony.default_network=10
 ro.use_data_netmgrd=true
 telephony.lteOnCdmaDevice=1
