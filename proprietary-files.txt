@@ -15,6 +15,10 @@ framework/com.quicinc.cne.api-V1.0-java.jar
 framework/com.quicinc.cne.jar
 -priv-app/CNEService/CNEService.apk
 
+# Display
+-app/colorservice/colorservice.apk
+-app/SVIService/SVIService.apk
+
 # DPM
 bin/dpmd
 etc/dpm/dpm.conf
@@ -46,6 +50,7 @@ lib/vendor.essential.hardware.sidecar@1.0.so
 lib64/vendor.essential.hardware.sidecar@1.0.so
 
 # Fingerprint
+-app/QFingerprintService/QFingerprintService.apk
 framework/vendor.qti.hardware.fingerprint-V1.0-java.jar
 
 # GPS
@@ -125,6 +130,7 @@ framework/QtiTelephonyServicelibrary.jar
 lib/libtsext_inf.so
 lib64/libtsext_inf.so
 -priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk
+-app/SmartcardService/SmartcardService.apk
 
 # Sensors
 lib/sensors.hal.tof.so
