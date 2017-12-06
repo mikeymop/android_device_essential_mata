@@ -130,7 +130,6 @@ framework/QtiTelephonyServicelibrary.jar
 lib/libtsext_inf.so
 lib64/libtsext_inf.so
 -priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk
--app/SmartcardService/SmartcardService.apk
 
 # Sensors
 lib/sensors.hal.tof.so
