@@ -10,9 +10,9 @@ etc/cne/andsfCne.xml
 etc/cne/SwimConfig.xml
 etc/permissions/cneapiclient.xml
 etc/permissions/com.quicinc.cne.xml
-framework/cneapiclient.jar
-framework/com.quicinc.cne.api-V1.0-java.jar
-framework/com.quicinc.cne.jar
+-framework/cneapiclient.jar
+-framework/com.quicinc.cne.api-V1.0-java.jar
+-framework/com.quicinc.cne.jar
 -priv-app/CNEService/CNEService.apk
 
 # Display
@@ -26,9 +26,9 @@ etc/dpm/nsrm/NsrmConfiguration.xml
 etc/init/dpmd.rc
 etc/permissions/com.qti.dpmframework.xml
 etc/permissions/dpmapi.xml
-framework/com.qti.dpmframework.jar
-framework/dpmapi.jar
-framework/tcmclient.jar
+-framework/com.qti.dpmframework.jar
+-framework/dpmapi.jar
+-framework/tcmclient.jar
 -priv-app/dpmserviceapp/dpmserviceapp.apk
 lib/com.qualcomm.qti.dpm.api@1.0.so
 lib/libdpmctmgr.so
@@ -51,14 +51,14 @@ lib64/vendor.essential.hardware.sidecar@1.0.so
 
 # Fingerprint
 -app/QFingerprintService/QFingerprintService.apk
-framework/vendor.qti.hardware.fingerprint-V1.0-java.jar
+-framework/vendor.qti.hardware.fingerprint-V1.0-java.jar
 
 # GPS
 etc/permissions/com.qti.location.sdk.xml
 etc/permissions/com.qualcomm.location.xml
 etc/permissions/izat.xt.srv.xml
-framework/com.qti.location.sdk.jar
-framework/izat.xt.srv.jar
+-framework/com.qti.location.sdk.jar
+-framework/izat.xt.srv.jar
 -priv-app/com.qualcomm.location/com.qualcomm.location.apk
 lib/liblocationservice_jni.so
 lib/vendor.qti.gnss@1.0.so
@@ -97,7 +97,7 @@ lib64/vendor.qti.hardware.perf@1.0.so
 
 # Postprocessing
 etc/permissions/com.qti.snapdragon.sdk.display.xml
-framework/com.qti.snapdragon.sdk.display.jar
+-framework/com.qti.snapdragon.sdk.display.jar
 lib/vendor.display.color@1.0.so
 lib/vendor.display.postproc@1.0.so
 lib/vendor.qti.hardware.vpp@1.1.so
@@ -123,10 +123,10 @@ etc/permissions/radioconfig.xml
 etc/permissions/radioconfiginterface.xml
 etc/permissions/telephonyservice.xml
 etc/sysconfig/qti_whitelist.xml
-framework/embmslibrary.jar
-framework/qcrilhook.jar
-framework/qti-telephony-common.jar
-framework/QtiTelephonyServicelibrary.jar
+-framework/embmslibrary.jar
+-framework/qcrilhook.jar
+-framework/qti-telephony-common.jar
+-framework/QtiTelephonyServicelibrary.jar
 lib/libtsext_inf.so
 lib64/libtsext_inf.so
 -priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk
