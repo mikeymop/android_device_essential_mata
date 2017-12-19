@@ -13,6 +13,3 @@ TW_SCREEN_BLANK_ON_BOOT := true
 TW_X_OFFSET := 64
 TWRP_INCLUDE_LOGCAT := true
 TWRP_THEME_LOC := device/essential/mata/twrp/theme
-
-PRODUCT_COPY_FILES += \
-    device/essential/mata/twrp/theme/ui.xml:recovery/root/twres/ui.xml
