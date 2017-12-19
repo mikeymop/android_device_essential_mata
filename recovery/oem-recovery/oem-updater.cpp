@@ -41,7 +41,9 @@ Value* DecryptFn(const char* name, State* state, int argc, Expr* argv[]) {
     if (argc != 2)
         return ErrorAbort(state, "%s expects 2 args, got %d", name, argc);
 
+#ifndef WITH_TWRP
     if (ReadArgs(state, argv, 2, &src_file, &dst_file))
+#endif
         return NULL;
 
     rc = decrypt_image(src_file, dst_file);
@@ -61,7 +63,9 @@ Value* BootUpdateFn(const char* name, State* state, int argc, Expr* argv[])
     if (argc != 1)
         return ErrorAbort(state, "%s() expects 1 args, got %d", name, argc);
 
+#ifndef WITH_TWRP
     if (ReadArgs(state, argv, 1, &stageStr))
+#endif
         return NULL;
 
     if (!strcmp(stageStr, "main"))
@@ -84,6 +88,8 @@ Value* BootUpdateFn(const char* name, State* state, int argc, Expr* argv[])
 }
 
 void Register_librecovery_updater_msm8998() {
+#ifndef WITH_TWRP
     RegisterFunction("msm.decrypt", DecryptFn);
     RegisterFunction("msm.boot_update", BootUpdateFn);
+#endif
 }
