@@ -1,6 +1,3 @@
-# Audio
-etc/firmware/TFA9891.cnt
-
 # Camera
 -app/Score/Score.apk
 bin/fastboot
@@ -15,10 +12,6 @@ etc/permissions/com.quicinc.cne.xml
 -framework/com.quicinc.cne.api-V1.0-java.jar
 -framework/com.quicinc.cne.jar
 -priv-app/CNEService/CNEService.apk
-
-# Display
--app/colorservice/colorservice.apk
--app/SVIService/SVIService.apk
 
 # DPM
 bin/dpmd
@@ -47,12 +40,6 @@ lib64/libdpmtcm.so
 # Essential
 etc/permissions/vendor-essential-hardware-sidecar.xml
 etc/permissions/privapp-permissions-mata.xml
-lib/vendor.essential.hardware.sidecar@1.0.so
-lib64/vendor.essential.hardware.sidecar@1.0.so
-
-# Fingerprint
--app/QFingerprintService/QFingerprintService.apk
--framework/vendor.qti.hardware.fingerprint-V1.0-java.jar
 
 # GPS
 etc/permissions/com.qti.location.sdk.xml
@@ -72,14 +59,12 @@ lib64/vendor.qti.gnss@1.0.so
 -priv-app/HotwordEnrollmentXGoogleWCD9335/HotwordEnrollmentXGoogleWCD9335.apk
 
 # IMS
--app/ims/ims.apk
 lib/com.qualcomm.qti.imscmservice@1.0.so
 lib/lib-imscamera.so
 lib/lib-imsvideocodec.so
 lib/lib-imsvtextutils.so
 lib/lib-imsvtutils.so
 lib/libimscamera_jni.so
-lib/libimsmedia_jni.so
 lib/vendor.qti.imsrtpservice@1.0.so
 lib64/com.qualcomm.qti.imscmservice@1.0.so
 lib64/lib-imscamera.so
@@ -87,7 +72,6 @@ lib64/lib-imsvideocodec.so
 lib64/lib-imsvtextutils.so
 lib64/lib-imsvtutils.so
 lib64/libimscamera_jni.so
-lib64/libimsmedia_jni.so
 lib64/vendor.qti.imsrtpservice@1.0.so
 
 # NFC
@@ -127,22 +111,8 @@ lib/vendor.qti.hardware.qteeconnector@1.0.so
 lib64/vendor.qti.hardware.qteeconnector@1.0.so
 
 # Radio
--app/datastatusnotification/datastatusnotification.apk
--app/embms/embms.apk
--app/QtiTelephonyService/QtiTelephonyService.apk
--app/radioconfig/radioconfig.apk
-etc/permissions/embms.xml
-etc/permissions/qcrilhook.xml
-etc/permissions/radioconfig.xml
-etc/permissions/radioconfiginterface.xml
-etc/permissions/telephonyservice.xml
 etc/sysconfig/qti_whitelist.xml
--framework/embmslibrary.jar
--framework/qcrilhook.jar
 -framework/qti-telephony-common.jar
--framework/QtiTelephonyServicelibrary.jar
-lib/libtsext_inf.so
-lib64/libtsext_inf.so
 -priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk
 
 # Sensors
